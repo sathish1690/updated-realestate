@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Real Estate</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="css/line-icon.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/themify.css">
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+   </head>
+   <body>
+      <section class="navsec" id="myHeader">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+               <a class="navbar-brand" href="#"><img src="image/logo.png" style="width: 150px;"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="ti-menu"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-item nav-link" href="locationsearch.html">Listing</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-item nav-link" href="#">Property</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-item nav-link" href="#">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                     </li>
+                  </ul>
+                  <div class="form-inline my-2 my-lg-0">
+                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#"> Add Property</a>
+                        </li>
+                        <li class="nav-item add-listing blue">
+                           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign in</button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </section>
+      <section>
+         <div class="page-title">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                     <h2 class="ipt-title">Property List</h2>
+                     <span class="ipn-subtitle">Property List With Sidebar</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+	  
+      <section class="home-featureproperty bg-light">
+         <div class="container">
+		 	  <div class="row d-block d-sm-block d-lg-none">
+		<div class="col-lg-12 col-md-12" style="padding:0px 15px">
+			<div class="filter_search_opt">
+				<a href="javascript:void(0);" data-toggle="modal" data-target="#left_modal_sm">Search Property<i class="ml-2 ti-menu"></i></a>
+			</div>
+		</div>
+	</div>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-12 sm-sidebar d-none d-sm-none d-lg-block">
+                  <div class="simple-sidebar">
+                     <div class="filter-search-box">
+                        <div class="form-group">
+                           <div class="input-with-icon">
+                              <input type="text" class="form-control" placeholder="Search by space name">
+                              <i class="ti-search"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-group filter_wraps" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading  widget-boxed-header" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 <i class="more-less lni-plus"></i>
+                                 Where
+                                 <span class="selected">Chicago</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="b1" class="radio-custom" name="where" type="radio">
+                                                   <label for="b1" class="radio-custom-label">Atlanta</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b2" class="radio-custom" name="where" type="radio">
+                                                   <label for="b2" class="radio-custom-label">Austin</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b3" class="radio-custom" name="where" type="radio">
+                                                   <label for="b3" class="radio-custom-label">Boston</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b4" class="radio-custom" name="where" type="radio" checked="">
+                                                   <label for="b4" class="radio-custom-label">Chicago</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b5" class="radio-custom" name="where" type="radio">
+                                                   <label for="b5" class="radio-custom-label">Dallas</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b6" class="radio-custom" name="where" type="radio">
+                                                   <label for="b6" class="radio-custom-label">Denver</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b7" class="radio-custom" name="where" type="radio">
+                                                   <label for="b7" class="radio-custom-label">Houston</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b8" class="radio-custom" name="where" type="radio">
+                                                   <label for="b8" class="radio-custom-label">Jacksonville</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b9" class="radio-custom" name="where" type="radio">
+                                                   <label for="b9" class="radio-custom-label">Los Angeles</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading  widget-boxed-header" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 <i class="more-less lni-plus"></i>
+                                 Property Types
+                                 <span class="selected">Apartment</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="c1" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c1" class="radio-custom-label">House</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c2" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c2" class="radio-custom-label">Office Desk</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c3" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c3" class="radio-custom-label">Villa</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c4" class="radio-custom" name="ptype" type="radio" checked="">
+                                                   <label for="c4" class="radio-custom-label">Apartment</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c5" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c5" class="radio-custom-label">Condo</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c6" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c6" class="radio-custom-label">Denver</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c7" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c7" class="radio-custom-label">Studio</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading widget-boxed-header" role="tab" id="headingFour">
+                              <h4 class="panel-title">
+                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                 <i class="more-less lni-plus"></i> 
+                                 Ameneties
+                                 <span class="selected">ADA Compliant</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="g1" class="checkbox-custom" name="ADA" type="checkbox" checked="">
+                                                   <label for="g1" class="checkbox-custom-label">ADA Compliant</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g2" class="checkbox-custom" name="Parking" type="checkbox">
+                                                   <label for="g2" class="checkbox-custom-label">Parking Options</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g3" class="checkbox-custom" name="Coffee" type="checkbox">
+                                                   <label for="g3" class="checkbox-custom-label">Coffee Provided</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g4" class="checkbox-custom" name="Mother" type="checkbox">
+                                                   <label for="g4" class="checkbox-custom-label">Mother's Room</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g5" class="checkbox-custom" name="Outdoor" type="checkbox">
+                                                   <label for="g5" class="checkbox-custom-label">Outdoor Space</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g6" class="checkbox-custom" name="Pet" type="checkbox">
+                                                   <label for="g6" class="checkbox-custom-label">Pet Friendly</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g7" class="checkbox-custom" name="Beauty" type="checkbox">
+                                                   <label for="g7" class="checkbox-custom-label">Beauty &amp; Message</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g8" class="checkbox-custom" name="Bike" type="checkbox">
+                                                   <label for="g8" class="checkbox-custom-label">Bike Parking</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g9" class="checkbox-custom" name="Phone" type="checkbox">
+                                                   <label for="g9" class="checkbox-custom-label">Phone Line</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g11" class="checkbox-custom" name="Private" type="checkbox">
+                                                   <label for="g11" class="checkbox-custom-label">Private Areas</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g12" class="checkbox-custom" name="Free" type="checkbox">
+                                                   <label for="g12" class="checkbox-custom-label">Free WiFi</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g13" class="checkbox-custom" name="Swiming" type="checkbox">
+                                                   <label for="g13" class="checkbox-custom-label">Swiming Pool</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading  widget-boxed-header" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 <i class="more-less lni-plus"></i>
+                                 Bedrooms
+                                 <span class="selected">2 Beds</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="a1" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a1" class="radio-custom-label">01 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a2" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a2" class="radio-custom-label">02 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a3" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a3" class="radio-custom-label">03 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a4" class="radio-custom" name="bed" type="radio" checked="">
+                                                   <label for="a4" class="radio-custom-label">04 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a5" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a5" class="radio-custom-label">05 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a6" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a6" class="radio-custom-label">06+ Bedrooms</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading widget-boxed-header" role="tab" id="headingFive">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                 <i class="more-less lni-plus"></i> 
+                                 Price Range
+                                 <span class="selected">$10,000 - $15,000</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="e1" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e1" class="radio-custom-label">Less Then $10,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e2" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e2" class="radio-custom-label">$10,000 - $15,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e3" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e3" class="radio-custom-label">$12,000 - $25,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e4" class="radio-custom" name="prices" type="radio" checked="">
+                                                   <label for="e4" class="radio-custom-label">$30,000 - $35,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e5" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e5" class="radio-custom-label">$40,000 - $45,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e6" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e6" class="radio-custom-label">$50,000 - $55,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e7" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e7" class="radio-custom-label">$60,000 - $65,000</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading widget-boxed-header" role="tab" id="headingSix">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                 <i class="more-less lni-plus"></i>
+                                 Mood
+                                 <span class="selected">Any Mood</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="f1" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f1" class="radio-custom-label">Any Mood</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f2" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f2" class="radio-custom-label">Professional</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f3" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f3" class="radio-custom-label">Essentials</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f4" class="radio-custom" name="moods" type="radio" checked="">
+                                                   <label for="f4" class="radio-custom-label">Unique</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f5" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f5" class="radio-custom-label">Lively</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f6" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f6" class="radio-custom-label">Luxe</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f7" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f7" class="radio-custom-label">Luxe</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group filter_button">
+                        <button type="submit" class="btn btn btn-theme-light-2 rounded full-width">22 Results Show</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-md-12 col-sm-12">
+			   <div class="row justify-content-center">
+								<div class="col-lg-12 col-md-12">
+									<div class="item-shorting-box" data-select2-id="6">
+										<div class="item-shorting clearfix">
+											<div class="left-column pull-left"><h4 class="m-0">Found 1-10 of 142 Results</h4></div>
+										</div>
+										<div class="item-shorting-box-right" data-select2-id="5">
+											<div class="shorting-by">
+												<select id="shorty" class="form-control select2-hidden-accessible">
+													<option value="" data-select2-id="2">Show All</option>
+													<option value="1" data-select2-id="8">Low Price</option>
+													<option value="2" data-select2-id="9">High Price</option>
+													<option value="3" data-select2-id="10">Most Popular</option>
+												</select>
+											</div>
+											<ul class="shorting-list">
+												<li><a href="" class="active"><i class="ti-layout-grid2"></i></a></li>
+												<li><a href=""><i class="ti-view-list"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+                  <div class="col-lg-12 col-md-12">
+                     <div class="property-listing property-1">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5">
+                              <div class="listing-img-wrapper">
+                                 <a href="">
+                                 <img src="image/1.jpg" class="img-fluid mx-auto" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7" style="padding-left: 0px;">
+                              <div class="listing-content">
+                                 <div class="listing-detail-wrapper-box">
+                                    <div class="listing-detail-wrapper">
+                                       <div class="listing-short-detail">
+                                          <h4 class="listing-name"><a href="single-property-2.html">Resort Valley Ocs</a></h4>
+                                          <div class="fr-can-rating">
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star"></i>
+                                             <span class="reviews_text">(42 Reviews)</span>
+                                          </div>
+                                          <span class="prt-types sale">For Sale</span>
+                                       </div>
+                                       <div class="list-price">
+                                          <h6 class="listing-card-info-price">$7,000</h6>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-features-wrapper">
+                                    <div class="list-fx-features" style="margin:0px;">
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bed.svg" width="13" alt=""></div>
+                                          3 Beds
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bathtub.svg" width="13" alt=""></div>
+                                          1 Bath
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/move.svg" width="13" alt=""></div>
+                                          800 sqft
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="listing-footer-wrapper">
+                                    <div class="listing-locate">
+                                       <span class="listing-location">  <img src="image/pin.svg" width="20">Quice Market, Canada</span>
+                                    </div>
+                                    <div class="listing-detail-btn">
+                                       <a href="single-property-2.html" class="more-btn">View</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                     <div class="property-listing property-1">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5">
+                              <div class="listing-img-wrapper">
+                                 <a href="">
+                                 <img src="image/2.jpg" class="img-fluid mx-auto" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7" style="padding-left: 0px;">
+                              <div class="listing-content">
+                                 <div class="listing-detail-wrapper-box">
+                                    <div class="listing-detail-wrapper">
+                                       <div class="listing-short-detail">
+                                          <h4 class="listing-name"><a href="single-property-2.html">Adobe Property Advisors</a></h4>
+                                          <div class="fr-can-rating">
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star"></i>
+                                             <span class="reviews_text">(42 Reviews)</span>
+                                          </div>
+                                          <span class="prt-types rent">For Rent</span>
+                                       </div>
+                                       <div class="list-price">
+                                          <h6 class="listing-card-info-price">$6,000</h6>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-features-wrapper">
+                                    <div class="list-fx-features" style="margin:0px;">
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bed.svg" width="13" alt=""></div>
+                                          3 Beds
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bathtub.svg" width="13" alt=""></div>
+                                          1 Bath
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/move.svg" width="13" alt=""></div>
+                                          800 sqft
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="listing-footer-wrapper">
+                                    <div class="listing-locate">
+                                       <span class="listing-location">  <img src="image/pin.svg" width="20">Quice Market, Canada</span>
+                                    </div>
+                                    <div class="listing-detail-btn">
+                                       <a href="single-property-2.html" class="more-btn">View</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                     <div class="property-listing property-1">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5">
+                              <div class="listing-img-wrapper">
+                                 <a href="">
+                                 <img src="image/3.jpg" class="img-fluid mx-auto" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7" style="padding-left: 0px;">
+                              <div class="listing-content">
+                                 <div class="listing-detail-wrapper-box">
+                                    <div class="listing-detail-wrapper">
+                                       <div class="listing-short-detail">
+                                          <h4 class="listing-name"><a href="single-property-2.html">Bluebell Real Estate</a></h4>
+                                          <div class="fr-can-rating">
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star"></i>
+                                             <span class="reviews_text">(42 Reviews)</span>
+                                          </div>
+                                          <span class="prt-types rent">For Rent</span>
+                                       </div>
+                                       <div class="list-price">
+                                          <h6 class="listing-card-info-price">$3,000</h6>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-features-wrapper">
+                                    <div class="list-fx-features" style="margin:0px;">
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bed.svg" width="13" alt=""></div>
+                                          3 Beds
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bathtub.svg" width="13" alt=""></div>
+                                          1 Bath
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/move.svg" width="13" alt=""></div>
+                                          800 sqft
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="listing-footer-wrapper">
+                                    <div class="listing-locate">
+                                       <span class="listing-location">  <img src="image/pin.svg" width="20">Quice Market, Canada</span>
+                                    </div>
+                                    <div class="listing-detail-btn">
+                                       <a href="single-property-2.html" class="more-btn">View</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                     <div class="property-listing property-1">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5">
+                              <div class="listing-img-wrapper">
+                                 <a href="">
+                                 <img src="image/1.jpg" class="img-fluid mx-auto" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7" style="padding-left: 0px;">
+                              <div class="listing-content">
+                                 <div class="listing-detail-wrapper-box">
+                                    <div class="listing-detail-wrapper">
+                                       <div class="listing-short-detail">
+                                          <h4 class="listing-name"><a href="single-property-2.html">Nestled Real Estate</a></h4>
+                                          <div class="fr-can-rating">
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star"></i>
+                                             <span class="reviews_text">(42 Reviews)</span>
+                                          </div>
+                                          <span class="prt-types sale">For Sale</span>
+                                       </div>
+                                       <div class="list-price">
+                                          <h6 class="listing-card-info-price">$4,800</h6>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-features-wrapper">
+                                    <div class="list-fx-features" style="margin:0px;">
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bed.svg" width="13" alt=""></div>
+                                          3 Beds
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bathtub.svg" width="13" alt=""></div>
+                                          1 Bath
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/move.svg" width="13" alt=""></div>
+                                          800 sqft
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="listing-footer-wrapper">
+                                    <div class="listing-locate">
+                                       <span class="listing-location">  <img src="image/pin.svg" width="20">Quice Market, Canada</span>
+                                    </div>
+                                    <div class="listing-detail-btn">
+                                       <a href="single-property-2.html" class="more-btn">View</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                     <div class="property-listing property-1">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5">
+                              <div class="listing-img-wrapper">
+                                 <a href="">
+                                 <img src="image/2.jpg" class="img-fluid mx-auto" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7" style="padding-left: 0px;">
+                              <div class="listing-content">
+                                 <div class="listing-detail-wrapper-box">
+                                    <div class="listing-detail-wrapper">
+                                       <div class="listing-short-detail">
+                                          <h4 class="listing-name"><a href="single-property-2.html">Flow Group Real Estate</a></h4>
+                                          <div class="fr-can-rating">
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star"></i>
+                                             <span class="reviews_text">(42 Reviews)</span>
+                                          </div>
+                                          <span class="prt-types rent">For Rent</span>
+                                       </div>
+                                       <div class="list-price">
+                                          <h6 class="listing-card-info-price">$5,900</h6>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-features-wrapper">
+                                    <div class="list-fx-features" style="margin:0px;">
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bed.svg" width="13" alt=""></div>
+                                          3 Beds
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bathtub.svg" width="13" alt=""></div>
+                                          1 Bath
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/move.svg" width="13" alt=""></div>
+                                          800 sqft
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="listing-footer-wrapper">
+                                    <div class="listing-locate">
+                                       <span class="listing-location">  <img src="image/pin.svg" width="20">Quice Market, Canada</span>
+                                    </div>
+                                    <div class="listing-detail-btn">
+                                       <a href="single-property-2.html" class="more-btn">View</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                     <div class="property-listing property-1">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5">
+                              <div class="listing-img-wrapper">
+                                 <a href="">
+                                 <img src="image/3.jpg" class="img-fluid mx-auto" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7" style="padding-left: 0px;">
+                              <div class="listing-content">
+                                 <div class="listing-detail-wrapper-box">
+                                    <div class="listing-detail-wrapper">
+                                       <div class="listing-short-detail">
+                                          <h4 class="listing-name"><a href="single-property-2.html">Resort Valley Ocs</a></h4>
+                                          <div class="fr-can-rating">
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star filled"></i>
+                                             <i class="fa fa-star"></i>
+                                             <span class="reviews_text">(42 Reviews)</span>
+                                          </div>
+                                          <span class="prt-types sale">For Sale</span>
+                                       </div>
+                                       <div class="list-price">
+                                          <h6 class="listing-card-info-price">$7,000</h6>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="price-features-wrapper">
+                                    <div class="list-fx-features" style="margin:0px;">
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bed.svg" width="13" alt=""></div>
+                                          3 Beds
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/bathtub.svg" width="13" alt=""></div>
+                                          1 Bath
+                                       </div>
+                                       <div class="listing-card-info-icon">
+                                          <div class="inc-fleat-icon"><img src="image/move.svg" width="13" alt=""></div>
+                                          800 sqft
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="listing-footer-wrapper">
+                                    <div class="listing-locate">
+                                       <span class="listing-location">  <img src="image/pin.svg" width="20">Quice Market, Canada</span>
+                                    </div>
+                                    <div class="listing-detail-btn">
+                                       <a href="single-property-2.html" class="more-btn">View</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               <div class="col-lg-8 offset-lg-4 col-md-12 col-sm-12">
+                 <ul class="pagination">
+					<li class = "page-item"> <a class="page-link" href="#"> <span class="ti-arrow-left"></span> </a> </li>
+					<li class = "page-item"> <a class="page-link" href="#"> 1 </a> </li>
+					<li class = "page-item active"> <a class="page-link" href="#"> 2 </a> </li>
+					<li class = "page-item"> <a class="page-link" href="#"> 3 </a> </li>
+					<li class = "page-item"> <a class="page-link" href="#"> ...</a> </li>
+					<li class = "page-item"> <a class="page-link" href="#"> 20 </a> </li>
+					<li class = "page-item"> <a class="page-link" href="#"> <span class="ti-arrow-right"></span></a> </li>
+				</ul>
+            </div>
+               </div>
+            </div>
+          
+         </div>
+      </section>
+      <section class="theme-bg call-to-act-wrap">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="call-to-act">
+                     <div class="call-to-act-head">
+                        <h3>Want to Become a Real Estate Agent?</h3>
+                        <span>We'll help you to grow your career and growth.</span>
+                     </div>
+                     <a href="#" class="btn btn-call-to-act">SignUp Today</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="dark-footer skin-dark-footer">
+         <div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-4">
+                     <div class="footer-widget">
+                        <img src="image/logo-light.png" class="img-footer" alt="">
+                        <div class="footer-add">
+                           <p>Collins Street West, Victoria 8007, Australia.</p>
+                           <p>+1 246-345-0695</p>
+                           <p>info@example.com</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4">
+                     <div class="footer-widget">
+                        <h4 class="widget-title">Navigations</h4>
+                        <ul class="footer-menu">
+                           <li><a href="about-us.html">About Us</a></li>
+                           <li><a href="faq.html">FAQs Page</a></li>
+                           <li><a href="checkout.html">Checkout</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4">
+                     <div class="footer-widget">
+                        <h4 class="widget-title">The Highlights</h4>
+                        <ul class="footer-menu">
+                           <li><a href="#">Apartment</a></li>
+                           <li><a href="#">My Houses</a></li>
+                           <li><a href="#">Restaurant</a></li>
+                           <li><a href="#">Nightlife</a></li>
+                           <li><a href="#">Villas</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                     <div class="footer-widget">
+                        <h4 class="widget-title">My Account</h4>
+                        <ul class="footer-menu">
+                           <li><a href="#">My Profile</a></li>
+                           <li><a href="#">My account</a></li>
+                           <li><a href="#">My Property</a></li>
+                           <li><a href="#">Favorites</a></li>
+                           <li><a href="#">Cart</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-widget">
+                        <h4 class="widget-title">Download Apps</h4>
+                        <a href="#" class="other-store-link">
+                           <div class="other-store-app">
+                              <div class="os-app-icon">
+                                 <i class="lni-playstore theme-cl"></i>
+                              </div>
+                              <div class="os-app-caps">
+                                 Google Play
+                                 <span>Get It Now</span>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="#" class="other-store-link">
+                           <div class="other-store-app">
+                              <div class="os-app-icon">
+                                 <i class="lni-apple theme-cl"></i>
+                              </div>
+                              <div class="os-app-caps">
+                                 App Store
+                                 <span>Now it Available</span>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-6">
+                     <p class="mb-0">© 2021 Designd By sathish, All Rights Reserved</p>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                     <ul class="footer-bottom-social">
+                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                        <li><a href="#"><i class="ti-twitter"></i></a></li>
+                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+	  
+	  <div class="modal modal-left fade sidefilterpopup" id="left_modal_sm" tabindex="-1" role="dialog" aria-labelledby="left_modal_sm">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Close Filter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="ti-close"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="simple-sidebar">
+                     <div class="filter-search-box">
+                        <div class="form-group">
+                           <div class="input-with-icon">
+                              <input type="text" class="form-control" placeholder="Search by space name">
+                              <i class="ti-search"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-group filter_wraps" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading  widget-boxed-header" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 <i class="more-less lni-plus"></i>
+                                 Where
+                                 <span class="selected">Chicago</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="b1" class="radio-custom" name="where" type="radio">
+                                                   <label for="b1" class="radio-custom-label">Atlanta</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b2" class="radio-custom" name="where" type="radio">
+                                                   <label for="b2" class="radio-custom-label">Austin</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b3" class="radio-custom" name="where" type="radio">
+                                                   <label for="b3" class="radio-custom-label">Boston</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b4" class="radio-custom" name="where" type="radio" checked="">
+                                                   <label for="b4" class="radio-custom-label">Chicago</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b5" class="radio-custom" name="where" type="radio">
+                                                   <label for="b5" class="radio-custom-label">Dallas</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b6" class="radio-custom" name="where" type="radio">
+                                                   <label for="b6" class="radio-custom-label">Denver</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b7" class="radio-custom" name="where" type="radio">
+                                                   <label for="b7" class="radio-custom-label">Houston</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b8" class="radio-custom" name="where" type="radio">
+                                                   <label for="b8" class="radio-custom-label">Jacksonville</label>
+                                                </li>
+                                                <li>
+                                                   <input id="b9" class="radio-custom" name="where" type="radio">
+                                                   <label for="b9" class="radio-custom-label">Los Angeles</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading  widget-boxed-header" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 <i class="more-less lni-plus"></i>
+                                 Property Types
+                                 <span class="selected">Apartment</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="c1" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c1" class="radio-custom-label">House</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c2" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c2" class="radio-custom-label">Office Desk</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c3" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c3" class="radio-custom-label">Villa</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c4" class="radio-custom" name="ptype" type="radio" checked="">
+                                                   <label for="c4" class="radio-custom-label">Apartment</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c5" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c5" class="radio-custom-label">Condo</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c6" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c6" class="radio-custom-label">Denver</label>
+                                                </li>
+                                                <li>
+                                                   <input id="c7" class="radio-custom" name="ptype" type="radio">
+                                                   <label for="c7" class="radio-custom-label">Studio</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading widget-boxed-header" role="tab" id="headingFour">
+                              <h4 class="panel-title">
+                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                 <i class="more-less lni-plus"></i> 
+                                 Ameneties
+                                 <span class="selected">ADA Compliant</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="g1" class="checkbox-custom" name="ADA" type="checkbox" checked="">
+                                                   <label for="g1" class="checkbox-custom-label">ADA Compliant</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g2" class="checkbox-custom" name="Parking" type="checkbox">
+                                                   <label for="g2" class="checkbox-custom-label">Parking Options</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g3" class="checkbox-custom" name="Coffee" type="checkbox">
+                                                   <label for="g3" class="checkbox-custom-label">Coffee Provided</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g4" class="checkbox-custom" name="Mother" type="checkbox">
+                                                   <label for="g4" class="checkbox-custom-label">Mother's Room</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g5" class="checkbox-custom" name="Outdoor" type="checkbox">
+                                                   <label for="g5" class="checkbox-custom-label">Outdoor Space</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g6" class="checkbox-custom" name="Pet" type="checkbox">
+                                                   <label for="g6" class="checkbox-custom-label">Pet Friendly</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g7" class="checkbox-custom" name="Beauty" type="checkbox">
+                                                   <label for="g7" class="checkbox-custom-label">Beauty &amp; Message</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g8" class="checkbox-custom" name="Bike" type="checkbox">
+                                                   <label for="g8" class="checkbox-custom-label">Bike Parking</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g9" class="checkbox-custom" name="Phone" type="checkbox">
+                                                   <label for="g9" class="checkbox-custom-label">Phone Line</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g11" class="checkbox-custom" name="Private" type="checkbox">
+                                                   <label for="g11" class="checkbox-custom-label">Private Areas</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g12" class="checkbox-custom" name="Free" type="checkbox">
+                                                   <label for="g12" class="checkbox-custom-label">Free WiFi</label>
+                                                </li>
+                                                <li>
+                                                   <input id="g13" class="checkbox-custom" name="Swiming" type="checkbox">
+                                                   <label for="g13" class="checkbox-custom-label">Swiming Pool</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading  widget-boxed-header" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 <i class="more-less lni-plus"></i>
+                                 Bedrooms
+                                 <span class="selected">2 Beds</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="a1" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a1" class="radio-custom-label">01 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a2" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a2" class="radio-custom-label">02 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a3" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a3" class="radio-custom-label">03 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a4" class="radio-custom" name="bed" type="radio" checked="">
+                                                   <label for="a4" class="radio-custom-label">04 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a5" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a5" class="radio-custom-label">05 Bedrooms</label>
+                                                </li>
+                                                <li>
+                                                   <input id="a6" class="radio-custom" name="bed" type="radio">
+                                                   <label for="a6" class="radio-custom-label">06+ Bedrooms</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading widget-boxed-header" role="tab" id="headingFive">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                 <i class="more-less lni-plus"></i> 
+                                 Price Range
+                                 <span class="selected">$10,000 - $15,000</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="e1" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e1" class="radio-custom-label">Less Then $10,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e2" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e2" class="radio-custom-label">$10,000 - $15,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e3" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e3" class="radio-custom-label">$12,000 - $25,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e4" class="radio-custom" name="prices" type="radio" checked="">
+                                                   <label for="e4" class="radio-custom-label">$30,000 - $35,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e5" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e5" class="radio-custom-label">$40,000 - $45,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e6" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e6" class="radio-custom-label">$50,000 - $55,000</label>
+                                                </li>
+                                                <li>
+                                                   <input id="e7" class="radio-custom" name="prices" type="radio">
+                                                   <label for="e7" class="radio-custom-label">$60,000 - $65,000</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="panel panel-default single_search_boxed">
+                           <div class="panel-heading widget-boxed-header" role="tab" id="headingSix">
+                              <h4 class="panel-title">
+                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                 <i class="more-less lni-plus"></i>
+                                 Mood
+                                 <span class="selected">Any Mood</span>
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                              <div class="panel-body">
+                                 <div class="side-list no-border">
+                                    <!-- Single Filter Card -->
+                                    <div class="single_filter_card">
+                                       <div class="card-body pt-0">
+                                          <div class="inner_widget_link">
+                                             <ul class="no-ul-list filter-list">
+                                                <li>
+                                                   <input id="f1" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f1" class="radio-custom-label">Any Mood</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f2" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f2" class="radio-custom-label">Professional</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f3" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f3" class="radio-custom-label">Essentials</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f4" class="radio-custom" name="moods" type="radio" checked="">
+                                                   <label for="f4" class="radio-custom-label">Unique</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f5" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f5" class="radio-custom-label">Lively</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f6" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f6" class="radio-custom-label">Luxe</label>
+                                                </li>
+                                                <li>
+                                                   <input id="f7" class="radio-custom" name="moods" type="radio">
+                                                   <label for="f7" class="radio-custom-label">Luxe</label>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group filter_button">
+                        <button type="submit" class="btn btn btn-theme-light-2 rounded full-width">22 Results Show</button>
+                     </div>
+                  </div>
+        
+      </div>
+      <!--<div class="modal-footer modal-footer-fixed">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+</div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.js"></script>
+	   <script src="js/pagShrink.js"></script>
+      <script>
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+         if (window.pageYOffset > sticky) {
+           header.classList.add("sticky");
+         } else {
+           header.classList.remove("sticky");
+         }
+         }
+      </script>
+      <script>
+         function toggleIcon(e) {
+          $(e.target)
+              .prev('.panel-heading  widget-boxed-header')
+              .find(".more-less")
+              .toggleClass('lni-plus lni-minus');
+         }
+         $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+         $('.panel-group').on('shown.bs.collapse', toggleIcon);
+         
+$('.pagination').pagShrink();
+      </script>
+	 
+   </body>
+</html>
